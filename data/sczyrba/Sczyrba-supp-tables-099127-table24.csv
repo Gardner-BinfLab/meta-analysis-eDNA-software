@@ -1,0 +1,229 @@
+Tool	Precision	Precision s.e.m*	Recall	Recall s.e.m.	Accuracy	Misclassification rate	Level	Dataset
+Gold Standard	100	0	100	0	100	0	superkingdom	low
+Gold Standard	100	0	100	0	100	0	phylum	low
+Gold Standard	100	0	100	0	100	0	class	low
+Gold Standard	100	0	100	0	100	0	order	low
+Gold Standard	100	0	100	0	100	0	family	low
+Gold Standard	100	0	100	0	100	0	genus	low
+Gold Standard	100	0	100	0	100	0	species	low
+Kraken 0.10.6-unreleased	49.96	7.07	44.97	6.71	89.84	0.29	superkingdom	low
+Kraken 0.10.6-unreleased	20.2	6.23	65.71	5.64	78.52	7.81	phylum	low
+Kraken 0.10.6-unreleased	16.17	5.91	68.64	5.79	70.02	11.27	class	low
+Kraken 0.10.6-unreleased	10.76	5.46	69.57	5.82	68.53	12.39	order	low
+Kraken 0.10.6-unreleased	5.74	4.71	56.97	6.32	57.81	19.13	family	low
+Kraken 0.10.6-unreleased	1.95	3.64	29.15	6.51	32.32	41.56	genus	low
+Kraken 0.10.6-unreleased	0.51	2.67	14.69	5.67	18.3	50.22	species	low
+taxator-tk 1.3.0e	49.78	7.06	17.18	4.14	34.32	0.02	superkingdom	low
+taxator-tk 1.3.0e	64.66	6.79	22.76	3.43	29.38	1.32	phylum	low
+taxator-tk 1.3.0e	62.12	6.9	26.74	3.45	26.43	0.45	class	low
+taxator-tk 1.3.0e	50.95	7.01	24.7	3.42	24.39	0.46	order	low
+taxator-tk 1.3.0e	36.26	6.87	19.48	3.74	21.27	0.83	family	low
+taxator-tk 1.3.0e	24.36	6.54	9.26	3.76	9.9	2.57	genus	low
+taxator-tk 1.3.0e	23.81	6.53	3.15	3.05	2.37	0.43	species	low
+taxator-tk 1.4pre1e	49.76	7.05	17.32	4.16	34.6	0.04	superkingdom	low
+taxator-tk 1.4pre1e	63.7	6.75	24.27	3.56	31.55	2.2	phylum	low
+taxator-tk 1.4pre1e	61.07	6.84	27.92	3.58	27.87	0.83	class	low
+taxator-tk 1.4pre1e	50.6	6.98	25.58	3.52	25.81	0.66	order	low
+taxator-tk 1.4pre1e	36.15	6.86	19.76	3.77	21.88	0.89	family	low
+taxator-tk 1.4pre1e	24.25	6.53	9.32	3.77	10.05	2.63	genus	low
+taxator-tk 1.4pre1e	23.8	6.53	4.07	3.43	3.4	0.43	species	low
+MEGAN 6.4.9	9.05	5.22	40.61	5.79	74.04	0.08	superkingdom	low
+MEGAN 6.4.9	1.98	3.7	35.55	4.21	42.54	2.88	phylum	low
+MEGAN 6.4.9	1.78	3.59	39.05	3.96	36.83	4.12	class	low
+MEGAN 6.4.9	1.35	3.35	37.49	3.83	35.92	4.24	order	low
+MEGAN 6.4.9	1.04	3.14	26.87	4.23	28.36	6.87	family	low
+MEGAN 6.4.9	0.54	2.69	14.05	4.42	8.57	14.8	genus	low
+MEGAN 6.4.9	0.09	1.75	7.09	3.85	4.97	11.51	species	low
+PhyloPythiaS+  c100	99.67	0	48.34	6.95	96.56	0.11	superkingdom	low
+PhyloPythiaS+  c100	85.94	4.67	80.65	5.98	89.65	5.72	phylum	low
+PhyloPythiaS+  c100	90.16	4.34	85.62	5.2	88.57	5.74	class	low
+PhyloPythiaS+  c100	95.65	3.6	83.99	5.22	85.77	5.36	order	low
+PhyloPythiaS+  c100	74.59	6.38	71.34	5.95	77.73	8.24	family	low
+PhyloPythiaS+  c100	41.27	6.89	38.55	6.61	51.83	30.83	genus	low
+PhyloPythiaS+  c100	25.83	6.54	32.6	6.52	48.4	22.17	species	low
+PhyloPythiaS+ mg c100	99.89	0	22.11	4.7	44.16	0	superkingdom	low
+PhyloPythiaS+ mg c100	98.75	1.55	26.74	4.64	31.85	0.3	phylum	low
+PhyloPythiaS+ mg c100	99.45	1.35	26.46	4.91	29.81	0.21	class	low
+PhyloPythiaS+ mg c100	99.53	1.3	25.87	4.76	29.25	0.21	order	low
+PhyloPythiaS+ mg c100	75.29	6.54	16.19	3.65	20.03	0.63	family	low
+PhyloPythiaS+ mg c100	45.87	7.05	8.29	3.64	9.2	2.77	genus	low
+PhyloPythiaS+ mg c100	34.35	6.84	6.94	3.57	8.86	2.77	species	low
+Kraken 0.10.5	49.97	7.07	39.53	6.29	78.98	0.07	superkingdom	low
+Kraken 0.10.5	27.51	6.51	53.3	5.99	66.55	4.87	phylum	low
+Kraken 0.10.5	29.82	6.54	58.98	6.31	59.91	6.37	class	low
+Kraken 0.10.5	18.29	6.1	60.44	6.21	58.64	6.96	order	low
+Kraken 0.10.5	10.04	5.39	48.51	6.33	48.32	10.36	family	low
+Kraken 0.10.5	3.32	4.17	26.49	6.4	30.33	23.96	genus	low
+Kraken 0.10.5	0.9	3.07	14.8	5.68	18.53	30.43	species	low
+Gold Standard	100	0	100	0	100	0	superkingdom	medium
+Gold Standard	100	0	100	0	100	0	phylum	medium
+Gold Standard	100	0	100	0	100	0	class	medium
+Gold Standard	100	0	100	0	100	0	order	medium
+Gold Standard	100	0	100	0	100	0	family	medium
+Gold Standard	100	0	100	0	100	0	genus	medium
+Gold Standard	100	0	100	0	100	0	species	medium
+Kraken 0.10.6-unreleased	74.48	6.56	64.93	6.51	93.03	0.28	superkingdom	medium
+Kraken 0.10.6-unreleased	13.89	5.87	89.96	3.37	91.66	0.75	phylum	medium
+Kraken 0.10.6-unreleased	17.96	6.12	83.79	4.73	90.55	1.33	class	medium
+Kraken 0.10.6-unreleased	19.02	6.2	84.91	4.96	89.89	1.72	order	medium
+Kraken 0.10.6-unreleased	15.89	5.94	77.26	5.73	80.87	9.9	family	medium
+Kraken 0.10.6-unreleased	6.39	4.9	61.72	6.7	68.41	20.33	genus	medium
+Kraken 0.10.6-unreleased	1.58	3.5	36.13	6.8	36.81	48.35	species	medium
+taxator-tk 1.3.0e	66.63	6.86	6.08	2.08	8.74	0	superkingdom	medium
+taxator-tk 1.3.0e	71.42	6.72	7.24	1.84	8.55	0	phylum	medium
+taxator-tk 1.3.0e	93.04	4.99	8.54	2.92	8.07	0.01	class	medium
+taxator-tk 1.3.0e	87.26	5.74	7.81	2.66	7.77	0.02	order	medium
+taxator-tk 1.3.0e	76.2	6.41	6.38	2.22	6.57	0.27	family	medium
+taxator-tk 1.3.0e	56.21	6.97	3.28	2.02	3.64	0.78	genus	medium
+taxator-tk 1.3.0e	42.5	7.03	1.25	1.78	1.15	0.24	species	medium
+taxator-tk 1.4pre1e	66.62	6.86	6.1	2.08	8.78	0	superkingdom	medium
+taxator-tk 1.4pre1e	71.19	6.71	7.41	1.85	8.75	0.03	phylum	medium
+taxator-tk 1.4pre1e	92.63	4.98	8.67	2.92	8.36	0.05	class	medium
+taxator-tk 1.4pre1e	87.2	5.74	7.92	2.66	8.17	0.04	order	medium
+taxator-tk 1.4pre1e	76.12	6.41	6.42	2.22	6.71	0.3	family	medium
+taxator-tk 1.4pre1e	56.21	6.97	3.28	2.02	3.64	0.78	genus	medium
+taxator-tk 1.4pre1e	42.5	7.03	1.25	1.78	1.15	0.24	species	medium
+MEGAN 6.4.9	27.39	6.48	71.84	5.56	90.55	0.12	superkingdom	medium
+MEGAN 6.4.9	3.49	4.24	59.51	1.31	60.47	0.29	phylum	medium
+MEGAN 6.4.9	4.11	4.35	52.97	3.63	56.97	0.84	class	medium
+MEGAN 6.4.9	4.36	4.41	50.58	3.59	53.12	1.31	order	medium
+MEGAN 6.4.9	4.6	4.43	41.81	4.31	41.94	4.64	family	medium
+MEGAN 6.4.9	2.46	3.87	29.11	4.64	27.24	6.93	genus	medium
+MEGAN 6.4.9	0.57	2.72	14.48	4.47	14.65	9.97	species	medium
+MEGAN 6.4.9	28.91	6.65	68.11	5.96	89.86	0.12	superkingdom	medium
+MEGAN 6.4.9	3.35	4.23	59.13	1.19	59.08	0.43	phylum	medium
+MEGAN 6.4.9	3.91	4.33	52.2	3.6	56.56	0.89	class	medium
+MEGAN 6.4.9	4.4	4.45	50.32	3.63	53.67	1.3	order	medium
+MEGAN 6.4.9	4.52	4.45	41.62	4.29	44.89	3.04	family	medium
+MEGAN 6.4.9	2.4	3.86	28.11	4.58	35.28	4.73	genus	medium
+MEGAN 6.4.9	0.52	2.66	14.36	4.45	20.19	9.59	species	medium
+MEGAN 6.4.9	11.61	5.49	67.67	5.48	84.35	0.15	superkingdom	medium
+MEGAN 6.4.9	2.12	3.75	52.12	1.39	52.05	0.35	phylum	medium
+MEGAN 6.4.9	2.61	3.89	47.2	3.44	49.63	0.98	class	medium
+MEGAN 6.4.9	2.87	3.98	45	3.42	46.81	1.54	order	medium
+MEGAN 6.4.9	3.28	4.07	37.3	4.07	37.84	4.84	family	medium
+MEGAN 6.4.9	1.94	3.63	25.91	4.4	24.23	7.02	genus	medium
+MEGAN 6.4.9	0.46	2.58	12.43	4.18	12.65	9.35	species	medium
+MEGAN 6.4.9	17.92	6.11	64.33	5.81	83.63	0.13	superkingdom	medium
+MEGAN 6.4.9	2.12	3.78	52.18	1.43	50.88	0.47	phylum	medium
+MEGAN 6.4.9	2.57	3.91	46.28	3.45	49.14	0.95	class	medium
+MEGAN 6.4.9	3.03	4.06	44.28	3.46	47.06	1.43	order	medium
+MEGAN 6.4.9	3.28	4.11	37.06	4.06	40.26	3.33	family	medium
+MEGAN 6.4.9	1.91	3.63	24.97	4.36	31.72	5	genus	medium
+MEGAN 6.4.9	0.43	2.53	12.39	4.18	17.78	9.23	species	medium
+PhyloPythiaS+  c400	75.11	4.88	45.61	6.3	95.95	1.23	superkingdom	medium
+PhyloPythiaS+  c400	73.96	6.54	86.15	4.73	95.12	1.13	phylum	medium
+PhyloPythiaS+  c400	81.63	5.72	81.97	5.48	92.43	2.65	class	medium
+PhyloPythiaS+  c400	83.7	5.7	81.67	5.66	90.4	3.17	order	medium
+PhyloPythiaS+  c400	78.28	6.18	74.63	5.94	80.36	8.53	family	medium
+PhyloPythiaS+  c400	56.92	6.93	53.32	6.74	59.2	16.85	genus	medium
+PhyloPythiaS+  c400	25.94	6.52	30.42	6.57	28.93	44.2	species	medium
+PhyloPythiaS+  c200	75.11	4.88	45.6	6.3	95.94	1.23	superkingdom	medium
+PhyloPythiaS+  c200	73.96	6.54	86.15	4.73	95.12	1.13	phylum	medium
+PhyloPythiaS+  c200	81.63	5.72	81.97	5.48	92.43	2.65	class	medium
+PhyloPythiaS+  c200	83.7	5.7	81.67	5.66	90.4	3.17	order	medium
+PhyloPythiaS+  c200	78.28	6.18	74.63	5.94	80.36	8.53	family	medium
+PhyloPythiaS+  c200	56.92	6.93	53.32	6.74	59.2	16.85	genus	medium
+PhyloPythiaS+  c200	25.94	6.52	30.42	6.57	28.93	44.2	species	medium
+PhyloPythiaS+ mg c200	94.05	2.44	14.88	4.49	42.81	0	superkingdom	medium
+PhyloPythiaS+ mg c200	74.52	6.56	37.74	4.86	36.83	0.44	phylum	medium
+PhyloPythiaS+ mg c200	87.26	5.74	30.48	4.6	35.85	0.47	class	medium
+PhyloPythiaS+ mg c200	89.87	5.47	30.77	4.35	35.22	0.5	order	medium
+PhyloPythiaS+ mg c200	81.37	6.15	24.61	4.36	26.47	2.4	family	medium
+PhyloPythiaS+ mg c200	61.33	6.95	17.15	4.5	17.18	6.03	genus	medium
+PhyloPythiaS+ mg c200	29.4	6.72	8.19	3.8	7.5	9.39	species	medium
+Kraken 0.10.5	74.94	6.58	61.23	6.31	88.06	0.18	superkingdom	medium
+Kraken 0.10.5	23.01	6.48	85.23	3.78	87.29	0.53	phylum	medium
+Kraken 0.10.5	28.5	6.65	76.92	4.97	86.41	0.98	class	medium
+Kraken 0.10.5	28.7	6.64	79.04	5.29	85.56	1.42	order	medium
+Kraken 0.10.5	23.28	6.38	72.55	5.86	77.09	7.43	family	medium
+Kraken 0.10.5	9.81	5.4	58.96	6.63	65.45	15.65	genus	medium
+Kraken 0.10.5	2.68	3.99	35.51	6.75	36.55	41.12	species	medium
+Gold Standard	100	0	100	0	100	0	superkingdom	high
+Gold Standard	100	0	100	0	100	0	phylum	high
+Gold Standard	100	0	100	0	100	0	class	high
+Gold Standard	100	0	100	0	100	0	order	high
+Gold Standard	100	0	100	0	100	0	family	high
+Gold Standard	100	0	100	0	100	0	genus	high
+Gold Standard	100	0	100	0	100	0	species	high
+Kraken 0.10.6-unreleased	49.86	7.06	99.31	0.79	98.71	0.45	superkingdom	high
+Kraken 0.10.6-unreleased	32.01	6.8	78.8	4.48	97.6	1.14	phylum	high
+Kraken 0.10.6-unreleased	25.79	6.55	84.15	4.15	96.12	2.01	class	high
+Kraken 0.10.6-unreleased	24.31	6.47	83.52	4.44	94.55	3.27	order	high
+Kraken 0.10.6-unreleased	25.43	6.45	75.8	5.57	88.85	8.36	family	high
+Kraken 0.10.6-unreleased	13.67	5.7	50.32	6.64	68.93	26.96	genus	high
+Kraken 0.10.6-unreleased	0.64	2.78	5.68	4.71	12.98	75.93	species	high
+taxator-tk 1.3.0e	66.57	6.86	1.91	0.37	1.77	0	superkingdom	high
+taxator-tk 1.3.0e	91.51	5.25	2.16	1.49	1.72	0	phylum	high
+taxator-tk 1.3.0e	94.73	4.66	1.86	1.36	1.6	0	class	high
+taxator-tk 1.3.0e	96.75	4.06	1.51	1.27	1.49	0	order	high
+taxator-tk 1.3.0e	98.1	3.59	1.15	1.33	1.35	0.01	family	high
+taxator-tk 1.3.0e	81.25	6.17	0.55	1.21	0.7	0.07	genus	high
+taxator-tk 1.3.0e	16.67	6.1	0.03	0.65	0.05	0.03	species	high
+taxator-tk 1.4pre1e	66.57	6.86	1.91	0.37	1.77	0	superkingdom	high
+taxator-tk 1.4pre1e	91.46	5.25	2.17	1.49	1.76	0	phylum	high
+taxator-tk 1.4pre1e	94.69	4.66	1.89	1.36	1.67	0	class	high
+taxator-tk 1.4pre1e	96.73	4.06	1.53	1.27	1.59	0	order	high
+taxator-tk 1.4pre1e	98.09	3.59	1.15	1.33	1.36	0.01	family	high
+taxator-tk 1.4pre1e	81.25	6.17	0.55	1.21	0.7	0.07	genus	high
+taxator-tk 1.4pre1e	16.67	6.1	0.03	0.65	0.05	0.03	species	high
+MEGAN 6.4.9	4.1	4.44	86.6	2.42	80.8	0.07	superkingdom	high
+MEGAN 6.4.9	2.66	3.95	39.7	3.52	49.94	0.71	phylum	high
+MEGAN 6.4.9	2.64	3.92	40.7	3.3	47.21	1.51	class	high
+MEGAN 6.4.9	3.26	4.1	38.79	3.34	45.28	1.9	order	high
+MEGAN 6.4.9	4.83	4.46	33.4	3.73	38.14	3.81	family	high
+MEGAN 6.4.9	4.21	4.32	18.99	4.23	26.62	7.06	genus	high
+MEGAN 6.4.9	0.73	2.89	2.43	3.01	3.12	15.5	species	high
+MEGAN 6.4.9	5.04	4.66	86.72	2.35	81.26	0.08	superkingdom	high
+MEGAN 6.4.9	2.66	3.96	39.6	3.52	50.13	0.68	phylum	high
+MEGAN 6.4.9	2.68	3.96	40.76	3.3	47.31	1.5	class	high
+MEGAN 6.4.9	3.33	4.14	38.9	3.32	45.36	1.9	order	high
+MEGAN 6.4.9	4.95	4.51	33.44	3.76	38.49	3.67	family	high
+MEGAN 6.4.9	4.25	4.34	19.04	4.24	26.41	7.35	genus	high
+MEGAN 6.4.9	0.76	2.92	2.42	3.01	4.76	13.98	species	high
+MEGAN 6.4.9	4.71	4.59	86.56	2.4	80.89	0.08	superkingdom	high
+MEGAN 6.4.9	2.69	3.98	39.34	3.5	50.08	0.67	phylum	high
+MEGAN 6.4.9	2.66	3.95	40.23	3.3	47.03	1.59	class	high
+MEGAN 6.4.9	3.34	4.14	38.79	3.27	45.01	2.03	order	high
+MEGAN 6.4.9	4.95	4.51	33.29	3.75	37.95	4.03	family	high
+MEGAN 6.4.9	4.32	4.35	19.1	4.24	26.07	7.56	genus	high
+MEGAN 6.4.9	0.78	2.93	2.43	3.01	4.08	14.21	species	high
+MEGAN 6.4.9	4.49	4.54	86.62	2.35	81.19	0.08	superkingdom	high
+MEGAN 6.4.9	2.67	3.97	39.47	3.49	50.37	0.62	phylum	high
+MEGAN 6.4.9	2.7	3.96	40.51	3.28	47.49	1.46	class	high
+MEGAN 6.4.9	3.4	4.16	38.69	3.28	45.37	1.94	order	high
+MEGAN 6.4.9	5.03	4.53	33.21	3.74	38.69	3.79	family	high
+MEGAN 6.4.9	4.44	4.39	19.11	4.23	26.51	7.32	genus	high
+MEGAN 6.4.9	0.79	2.95	2.42	3.01	3.17	14.53	species	high
+MEGAN 6.4.9	4.95	4.64	86.86	2.3	81.66	0.09	superkingdom	high
+MEGAN 6.4.9	2.8	4.02	40.02	3.47	50.63	0.59	phylum	high
+MEGAN 6.4.9	2.79	3.99	40.89	3.27	47.97	1.34	class	high
+MEGAN 6.4.9	3.46	4.19	39.16	3.27	45.81	1.84	order	high
+MEGAN 6.4.9	5.11	4.55	33.52	3.73	39.55	3.48	family	high
+MEGAN 6.4.9	4.43	4.39	19.08	4.23	27.57	6.91	genus	high
+MEGAN 6.4.9	0.83	2.98	2.42	3.01	3.88	14.34	species	high
+PhyloPythiaS+ mg c400	99.38	0.73	28.38	4.58	49.05	0.03	superkingdom	high
+PhyloPythiaS+ mg c400	79.51	6.31	27.1	4.04	42.26	0.91	phylum	high
+PhyloPythiaS+ mg c400	87.03	5.74	30.36	3.98	41.27	0.91	class	high
+PhyloPythiaS+ mg c400	88.62	5.6	29.46	3.82	40.32	0.92	order	high
+PhyloPythiaS+ mg c400	83.56	6.01	26.94	4.19	34.62	0.94	family	high
+PhyloPythiaS+ mg c400	62.34	6.85	15.5	4.35	20.63	5.11	genus	high
+PhyloPythiaS+ mg c400	25.24	6.58	1.91	2.36	2.98	12.48	species	high
+PhyloPythiaS+  c400	99.82	0.3	99.81	0.3	99.9	0	superkingdom	high
+PhyloPythiaS+  c400	90.55	5.12	96.37	2.94	99.68	0.13	phylum	high
+PhyloPythiaS+  c400	90.23	4.88	96.38	2.73	98.36	0.96	class	high
+PhyloPythiaS+  c400	88.25	5.08	94.37	3.18	97.26	1.63	order	high
+PhyloPythiaS+  c400	81.37	5.94	85.81	5	92.05	4.55	family	high
+PhyloPythiaS+  c400	56.88	6.84	54.69	6.69	66.76	23.2	genus	high
+PhyloPythiaS+  c400	10.25	5.43	11.13	5.47	19.35	55.42	species	high
+Kraken 0.10.5	49.67	7.05	98.13	1.32	96.43	0.41	superkingdom	high
+Kraken 0.10.5	36.25	6.85	64.87	5.29	94.44	1.23	phylum	high
+Kraken 0.10.5	26.67	6.58	72.75	4.95	92.35	2.17	class	high
+Kraken 0.10.5	26.63	6.54	72.62	5	90.66	3.14	order	high
+Kraken 0.10.5	29.57	6.58	67.07	5.78	84.22	7.62	family	high
+Kraken 0.10.5	15.89	5.88	45.45	6.55	64.64	23.38	genus	high
+Kraken 0.10.5	0.79	2.95	5.24	4.58	11.69	61.8	species	high
+								
+"Suppl. Table 24: *s.e.m. denotes the standard error of the mean.
+Taxonomic binning performance metrics across ranks for every
+complexity data set, with results for the complete data set."								
