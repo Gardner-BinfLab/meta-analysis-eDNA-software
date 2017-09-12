@@ -4,14 +4,16 @@ A meta-analysis of benchmarks of environmental DNA sequence analysis tools.
 
 
 ######################################################################
-#Parsing data from the following manuscripts:
-# Bazinet.2012
-# Lindgreen.2016
-# Siegwald.2017
-# Peabody.2015
-# Sczyrba.2017
-# McIntyre.2017
 
+#Parsing data from the following manuscripts:
+- Bazinet.2012
+- Lindgreen.2016
+- Siegwald.2017
+- Peabody.2015
+- Sczyrba.2017
+- McIntyre.2017
+
+```
 ./bin/bazinet2tab.pl      > data/metagenome-meta-analysis-F-measures.tsv
 ./bin/lindgreen2tab2.pl  >> data/metagenome-meta-analysis-F-measures.tsv
 ./bin/siegwald2tab2.pl   >> data/metagenome-meta-analysis-F-measures.tsv
@@ -21,11 +23,12 @@ paste cami-challenge.recall-precision-genus cami-challenge.recall-precision-phyl
 cd -
 ./bin/sczyrba2tab2.pl    >> data/metagenome-meta-analysis-F-measures.tsv
 ./bin/mcintyre2tab2.pl   >> data/metagenome-meta-analysis-F-measures.tsv
-
+```
 
 
 ######################################################################
-#Plotting results:
+*Plotting results:
 
+```
 ./bin/visualiseResults.R
-
+```
