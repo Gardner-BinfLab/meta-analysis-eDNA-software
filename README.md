@@ -3,9 +3,7 @@
 A meta-analysis of benchmarks of environmental DNA sequence analysis tools. 
 
 
-######################################################################
-
-#Parsing data from the following manuscripts:
+##Parsing data from the following manuscripts:
 - Bazinet.2012
 - Lindgreen.2016
 - Siegwald.2017
@@ -26,8 +24,7 @@ cd -
 ```
 
 
-######################################################################
-*Plotting results:
+##Plotting results:
 
 ```
 ./bin/visualiseResults.R
