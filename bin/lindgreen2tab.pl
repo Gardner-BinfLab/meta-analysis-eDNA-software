@@ -5,7 +5,7 @@ use strict;
 
 #my $inFile = shift;
 
-open(IN, "< data/lindgreen/lindgreen2016-data.tsv");
+open(IN, "< lindgreen2016-data.tsv");
 my @in = <IN>;
 my @meth = split(/\t/, $in[0]); 
 my @sen  = split(/\t/, $in[1]); 
@@ -16,7 +16,7 @@ my $lab='';
 	Genometa    =>1,
 	Kraken	    =>1,
 	LMAT	    =>1,
-	MetaPhlan   =>1,
+	MetaPhlAn   =>1,
 	'MG-RAST'   =>1,
 	MEGAN	    =>1,
 	Qiime	    =>1,

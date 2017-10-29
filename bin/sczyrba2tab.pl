@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 #my $inFile = shift;
-my $inFile = "data/sczyrba/Sczyrba-supp-tables-099127-table24.csv";
+my $inFile = "cami/Sczyrba-supp-tables-099127-table24.csv";
 open(IN, "< $inFile");
 my $lab='';
 while(my $in=<IN>){

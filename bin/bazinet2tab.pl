@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-my $inFile = 'data/bazinet/ranking-of-metagenomics-tools-Bazinet.tsv';
+my $inFile = 'ranking-of-metagenomics-tools-Bazinet.tsv';
 
 my %method = (
     CARMA3       => 1,

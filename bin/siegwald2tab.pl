@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-my $inFile = "data/siegwald/ranking-of-metagenomics-tools-Siegwald-cleaned.tsv";
+my $inFile = "ranking-of-metagenomics-tools-Siegwald-cleaned.tsv";
 
 open(IN, "< $inFile");
 my $lab='';
