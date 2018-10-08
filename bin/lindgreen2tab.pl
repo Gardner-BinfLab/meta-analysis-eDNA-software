@@ -5,7 +5,7 @@ use strict;
 
 #my $inFile = shift;
 
-open(IN, "< lindgreen2016-data.tsv");
+open(IN, "< lindgreen/lindgreen2016-data.tsv");
 my @in = <IN>;
 my @meth = split(/\t/, $in[0]); 
 my @sen  = split(/\t/, $in[1]); 

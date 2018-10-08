@@ -3,65 +3,67 @@
 use warnings;
 use strict;
 
-my $inFile = "ranking-of-metagenomics-tools-Siegwald-cleaned.tsv";
-
 my %method = (
-    BMP      => 1,
-    Kraken   => 1,
-    mothur   => 1,
-    OneCodex => 1,
-    QIIME    => 1,
-    CLARK    => 1
+    MAPseq	    =>1,
+    mothur	    =>1,
+    QIIME	    =>1,
+    QIIME2	    =>1
     );
-my $lab;
-    
-my (%sensValues, %ppvValues, %fValues) = ((), (), ());  #hash of arrays,  
 
+my $lab;
+
+my $inFile = "almeida/Tables-combined.tsv";
 open(IN, "< $inFile");
+
+
+my (%sensValues, %ppvValues, %fValues);  #hash of arrays,  
 while(my $in=<IN>){
     chomp($in);
-    $in =~ s/One Codex/OneCodex/;
-    $in =~ s/kraken/Kraken/;
-    $in =~ s/QIIME SortMeRna SUMACLUST/QIIME/;
-    $in =~ s/QIIME UCLUST/QIIME/;
 
-#    if($in =~ /\S+\s+level;(.*error.*reads)/){
-    if($in =~ /\#(\S+;\d+ reads)/){
+    if($in =~ /Table S\d\.\s+(\S+)/){
 	printMe(\%sensValues, \%ppvValues, \%fValues, $lab) if (defined($lab));
 	(%sensValues, %ppvValues, %fValues) = ((), (), ()); 
-
-	$lab=$1;
+	$lab="Dataset:$1";
+	next;
     }
     
     my @a=split(/\s+/, $in);
-    #print "a:[[[@a]]]\n";
     if(defined($a[0]) && defined($method{$a[0]}) ){
 	my @aa = split(/\t/, $in);
-	#print "aa:[[[@aa]]]\n";
-	my $lab2 = '';
-	if($aa[0]=~/QIIME\s+(.*+)/){
-	    $lab2=$1;
-	    $aa[0]='QIIME';
-	}
-
-	push(@{    $fValues{$aa[0]} },  $aa[4]);
-	push(@{ $sensValues{$aa[0]} },  $aa[3]);
-	push(@{  $ppvValues{$aa[0]} },  $aa[2]);
-
-	push(@{    $fValues{$aa[0]} },  $aa[7]);
-	push(@{ $sensValues{$aa[0]} },  $aa[6]);
-	push(@{  $ppvValues{$aa[0]} },  $aa[5]);
+	my $lab2 = "DB:$a[1]";
 	
-	#print "Siegwald.2017\t$aa[0]\t$aa[4]\t$aa[3]\t$aa[2]\t$lab; Original values - 200(V3); Reference Database = $aa[1]; $lab2\n";
-	#print "Siegwald.2017\t$aa[0]\t$aa[7]\t$aa[6]\t$aa[5]\t$lab; Original values - 400(V4-V5); Reference Database = $aa[1]; $lab2\n";
+	#Sensitivity = TPR, Recall
+	#PPV         = Precision
+	#PPV = F*Sens/(2xSens - F)
+
+	#database, taxonomy level are point estimates of the same, non-independent value
+	#taxLevel: family
+	my $sens = $aa[2]/100;
+	my $F    = $aa[4]/100;
+	my $ppv  = $F*$sens / (2*$sens - $F); #PPV values not provided, so calculated them...
+	push(@{    $fValues{$aa[0]} },  $F);
+	push(@{ $sensValues{$aa[0]} },  $sens);
+	push(@{  $ppvValues{$aa[0]} },  $ppv);
+
+	#taxLevel: genus
+	$sens = $aa[6]/100;
+	$F    = $aa[8]/100;
+	$ppv  = ($F*$sens / (2*$sens - $F));
+	push(@{    $fValues{$aa[0]} },  $F);
+	push(@{ $sensValues{$aa[0]} },  $sens);
+	push(@{  $ppvValues{$aa[0]} },  $ppv);
+	
     }
+    
+    
 }
 close(IN); 
 
+
 printMe(\%sensValues, \%ppvValues, \%fValues, $lab);
 
-exit(0); 
 
+exit(0); 
 
 ######################################################################
 #printMe:
@@ -75,10 +77,8 @@ sub printMe {
 	my $medPPV  = median(  $ppvValues->{$tool} ); 
 	my $medF    = median(    $fValues->{$tool} ); 
 	#Paper	Method	F1.measure	Sensitivity	PPV	Notes
-	printf "Siegwald.2017\t$tool\t%0.3f\t%0.3f\t%0.3f\t$lab;\n", $medF, $medSens, $medPPV;
+	printf "Almeida.2018\t$tool\t%0.3f\t%0.3f\t%0.3f\t$lab;\n", $medF, $medSens, $medPPV;
     }
-    
-
     
 }
 
@@ -99,16 +99,3 @@ sub median {
 	return ($array[$count/2] + $array[$count/2 - 1]) / 2; 
     } 
 } 
-
-
-######################################################################
-sub isNumeric {
-    my $num = shift;
-    if ($num=~/^-?\d+\.?\d*$/) { 
-        return 1; 
-    }
-    else {
-        return 0;
-    }
-}
-
