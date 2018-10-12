@@ -16,6 +16,8 @@ my $inFile = "almeida/Tables-combined.tsv";
 open(IN, "< $inFile");
 
 
+print "Paper\tMethod\tF1.measure\tSensitivity\tPPV\tNotes\n";
+
 my (%sensValues, %ppvValues, %fValues);  #hash of arrays,  
 while(my $in=<IN>){
     chomp($in);

@@ -3,7 +3,7 @@
 use warnings;
 use strict;
 
-my $inFile = "ranking-of-metagenomics-tools-Siegwald-cleaned.tsv";
+my $inFile = "siegwald/ranking-of-metagenomics-tools-Siegwald-cleaned.tsv";
 
 my %method = (
     BMP      => 1,

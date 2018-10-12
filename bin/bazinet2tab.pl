@@ -18,7 +18,7 @@ my %method = (
     Treephyler   => 1
     );
 
-print "Paper\tMethod\tF1.measure\tSensitivity\tPPV\tNotes\n";
+#print "Paper\tMethod\tF1.measure\tSensitivity\tPPV\tNotes\n";
 open(IN, "< $inFile");
 my $lab;
 my (%sensValues, %ppvValues, %fValues) = ((), (), ());  #hash of arrays,  

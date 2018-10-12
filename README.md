@@ -14,10 +14,10 @@ A meta-analysis of benchmarks of environmental DNA sequence analysis tools.
 
 ```
 cd data/
-../bin/almeida2tab.pl     >  metagenome-meta-analysis-F-measures.tsv
-../bin/bazinet2tab.pl     >> metagenome-meta-analysis-F-measures.tsv
-../bin/lindgreen2tab2.pl  >> metagenome-meta-analysis-F-measures.tsv
-../bin/siegwald2tab2.pl   >> metagenome-meta-analysis-F-measures.tsv
+../bin/almeida2tab.pl    >  metagenome-meta-analysis-F-measures.tsv
+../bin/bazinet2tab.pl    >> metagenome-meta-analysis-F-measures.tsv
+../bin/lindgreen2tab.pl  >> metagenome-meta-analysis-F-measures.tsv
+../bin/siegwald2tab.pl   >> metagenome-meta-analysis-F-measures.tsv
 ```
 
 ```
