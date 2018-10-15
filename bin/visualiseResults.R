@@ -26,7 +26,7 @@ for(i in 1:length(methods)){
       	    p  <- papers[j]
 	    fp <- meths$F1.measure[methods[i]==meths$Method & p==meths$Paper]
       	    if(length(fp) > 0){
-	    	points(j, i, pch=19, col = cols[j], cex=log10(15*(length(fp)-0.9) )+0.5 )                   #cex=2.25*median(fp)+0.75)
+	    	points(j, i, pch=19, col = cols[j], cex=length(fp)/3.5+0.5 )                   #cex=2.25*median(fp)+0.75)
 		#cat(paste(p, methods[i], length(fp), "\n" ))
 		}
       }
@@ -34,7 +34,7 @@ for(i in 1:length(methods)){
 text(1.05-0.5,length(methods)+2.75, 'Number of F-measure estimates (N)', pos=4)
 cnts <- c(2,4,6,8,10)
 for(j in 1:length(cnts)){
-      points(j-0.5, length(methods)+1.5, pch=19, col=grey(0.5), cex=log10(15*(cnts[j]-0.9))+0.5)
+      points(j-0.5, length(methods)+1.5, pch=19, col=grey(0.5), cex=cnts[j]/3.5+0.5 )  #log10(15*(cnts[j]-0.9))+0.5)
       text(  j+0.05-0.5, length(methods)+1.5, cnts[j], pos=4, cex=0.75)
 }
 dev.off()
@@ -94,8 +94,8 @@ for(i in 1:length(methods)){
       lower<- q[1]
       scatterFCI[i,2] <- lower
       scatterFCI[i,3] <- upper
-      points(upper, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
-      points(lower, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
+      points(upper, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
+      points(lower, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
       lines(c(lower,upper), c(i,i), lwd=0.2, col='black')
 }
 lines(c(0,0), c(1,length(methods)), lty=2)
@@ -144,8 +144,8 @@ for(i in 1:length(methods)){
       q       <- quantile(results$thetastar,probs = c(0.025,0.975))
       upper<- q[2]
       lower<- q[1]
-      points(upper, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
-      points(lower, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
+      points(upper, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
+      points(lower, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
       lines(c(lower,upper), c(i,i), lwd=0.2, col='black')
 }
 for(j in 1:length(papers)){
@@ -190,8 +190,8 @@ for(i in 1:length(methods)){
       q       <- quantile(results$thetastar,probs = c(0.025,0.975))
       upper<- q[2]
       lower<- q[1]
-      points(upper, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
-      points(lower, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
+      points(upper, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
+      points(lower, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
       lines(c(lower,upper), c(i,i), lwd=0.2, col='black')
 }
 for(j in 1:length(papers)){
@@ -237,8 +237,8 @@ for(i in 1:length(methods)){
       q       <- quantile(results$thetastar,probs = c(0.025,0.975))
       upper<- q[2]
       lower<- q[1]
-      points(upper, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
-      points(lower, i, pch='|', col = 'black', cex=1, lwd=5,font=2)
+      points(upper, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
+      points(lower, i, pch='|', col = 'black', cex=0.8, lwd=5,font=2)
       lines(c(lower,upper), c(i,i), lwd=0.2, col='black')
 }
 for(j in 1:length(papers)){
